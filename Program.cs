@@ -1,3 +1,5 @@
+using Prometheus;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,6 +17,13 @@ var app = builder.Build();
     app.UseSwagger();
     app.UseSwaggerUI();
 //}
+
+/* Configuracao do prometheus começa aqui */
+
+    app.UseMetricServer();
+    app.UseHttpMetrics();
+
+/* Configuracao do prometheus termina aqui */
 
 //app.UseHttpsRedirection();
 

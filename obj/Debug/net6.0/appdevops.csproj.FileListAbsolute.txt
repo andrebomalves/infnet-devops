@@ -25,3 +25,6 @@
 /home/andre/Projetos/appdevops/obj/Debug/net6.0/appdevops.pdb
 /home/andre/Projetos/appdevops/obj/Debug/net6.0/appdevops.genruntimeconfig.cache
 /home/andre/Projetos/appdevops/obj/Debug/net6.0/ref/appdevops.dll
+/home/andre/Projetos/appdevops/bin/Debug/net6.0/Microsoft.Extensions.ObjectPool.dll
+/home/andre/Projetos/appdevops/bin/Debug/net6.0/Prometheus.NetStandard.dll
+/home/andre/Projetos/appdevops/bin/Debug/net6.0/Prometheus.AspNetCore.dll
