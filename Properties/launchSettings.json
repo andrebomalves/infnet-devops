@@ -26,6 +26,19 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "Release": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Release"
+      }
     }
   }
 }
+
+/* export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools */
+/* export DOTNET_ROOT=$HOME/.dotnet */
