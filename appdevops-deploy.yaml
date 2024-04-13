@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appdevops-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: appdevops
+  template:
+    metadata:
+      labels:
+        app: appdevops
+    spec:
+      containers:
+      - name: appdevops
+        image: andrebom/appdevops
+        ports:
+        - containerPort: 5000
