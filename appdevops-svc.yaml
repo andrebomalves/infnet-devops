@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: appdevops-service
 spec:
-  type: NodePort
-  ports:
-    - port: 5000
-      nodePort: 8080
   selector:
     app: appdevops
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+  type: NodePort

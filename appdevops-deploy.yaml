@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: appdevops-deployment
+  labels: 
+    app: appdevops
 spec:
   replicas: 4
   selector:
@@ -13,7 +15,13 @@ spec:
         app: appdevops
     spec:
       containers:
-      - name: appdevops
+      - name: appdevops-container
         image: andrebom/appdevops
         ports:
         - containerPort: 5000
+        livenessProbe:
+            httpGet:
+              path: /check
+              port: 5000
+            initialDelaySeconds: 60
+            periodSeconds: 10 

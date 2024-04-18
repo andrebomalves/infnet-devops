@@ -1,20 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/home/andre/Projetos/appdevops/appdevops.csproj": {}
+    "C:\\Users\\USER\\Documents\\CodigoFonte\\Infnet\\infnet-devops\\appdevops.csproj": {}
   },
   "projects": {
-    "/home/andre/Projetos/appdevops/appdevops.csproj": {
+    "C:\\Users\\USER\\Documents\\CodigoFonte\\Infnet\\infnet-devops\\appdevops.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/andre/Projetos/appdevops/appdevops.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\CodigoFonte\\Infnet\\infnet-devops\\appdevops.csproj",
         "projectName": "appdevops",
-        "projectPath": "/home/andre/Projetos/appdevops/appdevops.csproj",
-        "packagesPath": "/home/andre/.nuget/packages/",
-        "outputPath": "/home/andre/Projetos/appdevops/obj/",
+        "projectPath": "C:\\Users\\USER\\Documents\\CodigoFonte\\Infnet\\infnet-devops\\appdevops.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\CodigoFonte\\Infnet\\infnet-devops\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/andre/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -32,12 +33,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -66,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/andre/.dotnet/sdk/6.0.421/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

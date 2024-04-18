@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "appdevops.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "previsao-do-tempo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[appdevops.WeatherForecast, appdevops, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
