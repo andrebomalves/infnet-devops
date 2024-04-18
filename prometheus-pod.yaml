@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: prometheus
+  labels: 
+    app: prometheus
+spec:
+  containers:
+    - name: prometheus
+      image: prom/prometheus
+      volumeMounts:
+        - name: prometheus-data
+          mountPath: /prometheus/data
+  volumes:
+    - name: prometheus-data
+      persistentVolumeClaim:
+        claimName: prometheus-pvc
