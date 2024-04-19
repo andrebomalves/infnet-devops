@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+    stages {
+        stage ('Clean workspace') {
+            steps {
+                cleanWs()
+            }
+        }
+        stage ('Git Checkout') {
+            steps {
+                bat "gh repo clone andrebomalves/infnet-devops"
+            }
+        }
+        stage('Restore packages') {
+            steps {
+                bat "dotnet restore ${workspace}\\infnet-devops\\appdevops.csproj"
+            }
+        }
+        stage('Build') {
+            steps {
+                bat " dotnet build ${workspace}\\infnet-devops\\appdevops.csproj -c Release -o /app/build"
+            }
+        }
+        stage('Create Image') {
+            steps {
+                bat "docker build -f infnet-devops\\Dockerfile -t appdevops infnet-devops\\. "
+            }
+        }
+    }
+}
